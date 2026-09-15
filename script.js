@@ -148,7 +148,7 @@ console.log(todosPares); // Retorna -> false
 
 //! Função SORT
 // Ordena os elementos do array
-
+/*
 let numeros = [3, 10, 5, 2, 4];
 let letras = ["c", "a", "x", "h"];
 
@@ -159,3 +159,214 @@ console.log(letras); // Retorna -> ["a", "c", "h", "x"]
 //* para números
 numeros.sort((a, b) => a - b);
 console.log(numeros); // Retorna -> [2, 3, 4, 5, 10]
+*/
+//*REVERSE
+//inverte a ordem dos elementos do array
+//let numeros = [1. 2. 3]
+
+//numeros.reverse()
+//console.log(numeros) // [3, 2, 1]
+
+//*JOIN
+//junta os elementos de um array em uma string
+// let palavras = ["JS", "é", "top"]
+
+
+
+
+//*PUSH
+//*POP
+//*SHIFT
+//*UNSHIFT
+//let lista = ["A", "B"]
+
+//PUSH -> Adiciona elementos no final do array
+//lista.push("C") //adiciona
+//console.log(lista)
+
+
+//lista.pop() //remove
+//console.log(lista)
+
+
+//lista.shift() //remove
+//console.log(lista)
+
+
+//lista.unshift("A") //adiciona
+//console.log(lista)
+
+//*SLICE
+//Cria uma cópia de uma parte da lista
+
+/**
+ * *array.slice(inicial,final)
+ * 
+ * Inicial -> onde começa
+ * Final -> onde termina (não inclui a posição/indice/index)
+ */
+
+//let numeros = [1, 2, 3, 4]
+
+//let parte = numeros.slice(1, 3) //1 e 3 são as posições do array
+//console.log(parte) // [2, 3]
+
+//*SPLICE
+//Remove ou adiciona elementos em QUALQUER POSIÇÃO
+
+/**
+ *  *array.splice(index, count, item1, ..., itemX)
+ * 
+ * index -> indice(posição do elemento no array)
+ * count -> número de elementos a serem removidos
+ * item1, ..., itemX -> itens a serem adicionados
+ * */
+
+//let numeros = [1, 2, 3, 4]
+
+//numeros.splice(1, 1)
+//console.log(numeros) // [1, 3, 4]
+
+
+//let frutas = ["Banana", "Laranja", "Maçã", "Manga"]
+//frutas.splice(0, 3, "Limão", "Kiwi")
+//console.log(frutas) // ["Limão", "Kiwi", "Manga"]
+//let frutas = ["Banana", "Laranja", "Maçã", "Manga"]
+
+//frutas.splice(2, 0, "Limão", "Kiwi")
+//console.log(frutas) // ["Banana", "Laranja", "Limão", "Kiwi", "Maçã", "Manga"]
+
+//*REPLACE
+//Substitui uma parte da string
+//let texto = "olá mundo!"
+//let novoTexto = texto.replace("mundo", "cliente")
+//console.log(novoTexto) // "olá cliente!"
+
+//!NOSSAS FUNÇÕES
+
+//função comum
+//function exibirMensagem() { 
+//console.log("Bem vindo(a)!")
+//}
+
+//executando a função criada
+//exibirMensagem()
+
+//função com parâmetros
+
+//todo
+
+
+//função com mais de um parâmetro
+//const somar = (numero1, numero2) => numero1 + numero2
+
+//console.log(somar(1, 2))
+
+//outra forma
+//function somarNovo(numero1, numero2) {
+//console.log(numero1 + numero2)
+
+//let resultado = numero1 + numero2
+//return resultado
+//
+
+//*PROMPT
+//recebe/solicita informação do usuário
+//let nome = prompt("Digite seu nome: ")
+//console.log(nome)
+//alert("olá, " + nome)
+
+//recebendo um número e convertendo
+//let idade = Number(prompt("Digite sua idade: "))
+
+//idade = parseInt(prompt("Digite sua idade: "))
+
+//idade = parseFloat(prompt("Digite sua idade: "))
+
+
+//* O QUE VEREMOS NAS PROXIMAS AULAS
+//* SPOILER.......
+/*
+let textoP = document.getElementById("texto")
+
+let saudacao = prompt("Digite a saudação: ")
+
+if (saudacao == "bom dia") {
+    textoP.textContent = saudacao
+}
+
+else {
+    textoP.textContent = "SEGUNDOUUUUUUU"
+}
+*/
+
+//*===================================
+//* NÍVEL BÁSICO
+//*===================================
+
+//* Exercício 1
+/*
+for (let i = 1; i <= 10; i++) {
+console.log("Número:", i);
+}
+*/
+
+//* Exercício 2
+
+/*
+let numero = Number(prompt("Digite um número: "));
+
+for (let i = 1; i <= 10; i++) {
+    console.log("Número:", i* numero);
+}
+*/
+
+//* Exercício 3
+
+/*
+let N = Number(prompt("Digite um número: "));
+let soma = 0;
+let i = 1;
+
+while (i <= N) {
+    soma += i;
+    i++;
+}
+console.log("Número:", soma)
+*/
+
+//todo================================
+//todo NÍVEL INTERMEDIÁRIO
+//todo================================
+
+//todo Exercício 1
+
+/*
+let N = 50
+for (let i = 0; i <= N; i++) {
+    console.log("Número:", i++);
+}
+*/
+
+//todo Exercício 2
+
+
+
+//!===================================
+//! NÍVEL AVANÇADO
+//!===================================
+
+
+
+//! Exercício 2
+
+let N = prompt("Digite um número: ")
+for (let i = 1; i <= 10; i++) {
+   console.log(i + " x " + N + " = " + (i * N));
+}
+
+//?===================================
+//? DESAFIO EXTRA
+//?===================================
+
+
